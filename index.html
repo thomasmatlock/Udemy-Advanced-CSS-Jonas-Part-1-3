@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/icon_font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | Exciting tours for adventurous people</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./img/logo-white.png" alt="Logo" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Outdoors </span>
+          <!-- Here we want a single h1 broken into 2 lines --
+            not an h1, and an h2, because SEO, so we use span elements, which simply breaks stuff up into lines 
+            we also give the spans classnames to style them accordingly 
+            display them as block els, because their default is inline, whereas block occupy entire available space/create line breaks before/after-->
+          <span class="heading-primary--sub">is where life happens</span>
+        </h1>
+
+        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <!--very cool, we make butt an anchor element, href # leads nowhere, we give it 2 classes-->
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <!-- utility classes, re-usable, very simply have a simple goal-->
+          <h2 class="heading-secondary">
+            Exciting tours for adventurous people
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              You're going to fall in love with nature
+            </h3>
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              architecto natus quisquam possimus itaque.
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Live adventures like you never have before
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+              nam! Aut, perspiciatis maxime hic ipsa possimus quam nesciunt unde
+              earum architecto nulla quae.
+            </p>
+            <!--a tag is hyperlink href is the link's destination-->
+            <!--for full list of html entity &rarr; symbols, visit https://codingheroes.io/resources/-->
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <!--Building the About Section - Part 3 see this for creating children of class using Emmet
+            basically you write .parentName>.childName ie .composition>.img.composition_photo-->
+            <div class="composition">
+              <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1" />
+              <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2" />
+              <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <!--I like how we add multiple classes to style them from different sources-->
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Explore the world
+              </h3>
+              <p class="feature-box__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.Expedita possimus itaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <!--I like how we add multiple classes to style them from different sources-->
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Meet nature
+              </h3>
+              <p class="feature-box__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.Expedita possimus itaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <!--I like how we add multiple classes to style them from different sources-->
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Find your way
+              </h3>
+              <p class="feature-box__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.Expedita possimus itaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <!--I like how we add multiple classes to style them from different sources-->
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Live a healthier life
+              </h3>
+              <p class="feature-box__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.Expedita possimus itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <!-- utility classes, re-usable, very simply have a simple goal-->
+          <h2 class="heading-secondary">
+            Most popular tours
+          </h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <h4 class="card">
+              <div class="card__side  card__side--front card__side--front-1">
+                <div class="card__picture card__picture--1">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                  <!--use span to break up text-->
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li class="li">3 day tours</li>
+                    <li class="li">Up to 30 people</li>
+                    <li class="li">2 tour guides</li>
+                    <li class="li">Sleep in cozy hotels</li>
+                    <li class="li">Difficulty: Easy</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side  card__side--back card__side--back-1">
+                BACK
+              </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+
+        </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- GRID HTML TESTING-->
+    <!--
+  <section class="grid-test">
+
+    <div class="row">
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-2-of-3">
+        Col 2 of 3
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-2-of-4">
+        Col 2 of 4
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-3-of-4">
+        Col 3 of 4
+      </div>
+    </div>
+
+
+
+
+  </section>
+  -->
+
+    <h1></h1>
+  </body>
+
+</html>
