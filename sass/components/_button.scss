@@ -1,5 +1,4 @@
 .btn {
-
     /*cool something is a link, add :link to it
     :link is a pseudo-class, which are special states of selectors
     we want to use this to style elements under special conditions, like hover or link or whatever
@@ -23,18 +22,10 @@
         /*this is so the :after class can latch on this because absolute positions itself to nearest relative*/
         font-size: 1.6rem;
     }
-
     &:hover {
         transform: translateY(-0.3rem);
         /*causes element to appear to rise up*/
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-        /*box shadow takes a bunch of values, 
-      value1 is x direction, left/right, 
-      val2 is y, we want 1rem
-      3rd value is blur
-      val4 is color, we go complete black rgba with 20% opacity */
-
-        /*this is a pseudo element for after, which happens on hover*/
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             /*just like translate has x/y versions, so does scale*/
@@ -42,7 +33,6 @@
             /*fadeout element*/
         }
     }
-
     &:active {
         /*heres what happens when it's active by user, aka a click lol*/
         transform: translateY(-0.1rem);
@@ -51,23 +41,20 @@
         /*cool effect, cut shadow length and shadow blur in half so element looks closer to page,
         further from user when clicked*/
     }
-
     &--white {
         background-color: $color-white;
         border-radius: 10rem;
-
         &::after {
             background-color: $color-white;
         }
     }
-
     /*so the :after pseudo element is pretty cool
       here we create the ghost element that appears on hover then retreats again, it appear to zoom into infinity
       it adds virtual element right after element we are selecting which we can style
       the trick is basically place it behind our element, when activated it appears, but then also disappears behind its original element
       we ALWAYS specify content property, even empty, or else it wont appear*/
     &::after {
-        content: "";
+        content: '';
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -81,7 +68,6 @@
         z-index: -1;
         transition: all 0.4s;
     }
-
     &--animated {
         animation: moveInBottom 1s ease-out 1s;
         /*last value is delay, we want it to come in last*/
@@ -93,7 +79,6 @@
 }
 
 .btn-text {
-
     &:link,
     &:visited {
         color: $color-primary;
@@ -103,16 +88,14 @@
         font-size: $default-font-size;
         transition: all 0.2s; // look up 'all' what it means
     }
-
     &:hover {
         background-color: $color-primary;
         color: white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15); // values: x, y, blur, color
         transform: translateY(-2px); //moves button up 2px on hover
     }
-
     &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.25); // values: x, y, blur, color
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25); // values: x, y, blur, color
         transform: translateY(0px); //moves button up 2px on hover
     }
 }

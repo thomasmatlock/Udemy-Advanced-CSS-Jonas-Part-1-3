@@ -161,13 +161,7 @@ body {
   .btn:hover {
     transform: translateY(-0.3rem);
     /*causes element to appear to rise up*/
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    /*box shadow takes a bunch of values, 
-      value1 is x direction, left/right, 
-      val2 is y, we want 1rem
-      3rd value is blur
-      val4 is color, we go complete black rgba with 20% opacity */
-    /*this is a pseudo element for after, which happens on hover*/ }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       /*just like translate has x/y versions, so does scale*/
@@ -186,7 +180,7 @@ body {
     .btn--white::after {
       background-color: #fff; }
   .btn::after {
-    content: "";
+    content: '';
     display: inline-block;
     height: 100%;
     width: 100%;
